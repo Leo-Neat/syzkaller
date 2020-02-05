@@ -16,7 +16,6 @@ jobs:
     - name: Running Fuzzers
       uses: Leo-Neat/oss-fuzz/infra/cifuzz/actions/run_fuzzers@master
       with:
-        project-name: 'syzkaller'
         fuzz-time: 60
         dry-run: False
     - name: Uploading Crash
